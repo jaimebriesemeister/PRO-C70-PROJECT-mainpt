@@ -69,7 +69,7 @@ export default class RideScreen extends Component {
           <View style={styles.textinputContainer}>
             <TextInput
               style={[styles.textinput, { width: "82%" }]}
-              placeholder={"User Id"}
+              placeholder={"Id Usuário"}
               placeholderTextColor={"#FFFFFF"}
               value={userId}
             />
@@ -77,7 +77,7 @@ export default class RideScreen extends Component {
           <View style={[styles.textinputContainer, { marginTop: 25 }]}>
             <TextInput
               style={styles.textinput}
-              placeholder={"Bicycle Id"}
+              placeholder={"Id Bicicleta"}
               placeholderTextColor={"#FFFFFF"}
               value={bikeId}
             />
@@ -128,6 +128,7 @@ const styles = StyleSheet.create({
   },
   lowerContainer: {
     flex: 0.5,
+    marginTop: 50,
     alignItems: "center"
   },
   textinputContainer: {
