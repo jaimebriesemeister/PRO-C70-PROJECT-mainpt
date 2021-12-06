@@ -18,9 +18,9 @@ export default class BottomTabNavigator extends Component {
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
 
-              if (route.name === "Ride") {
+              if (route.name === "Alugar") {
                 iconName = "bicycle";
-              } else if (route.name === "Ride History") {
+              } else if (route.name === "Histórico de Locações") {
                 iconName = "time";
               }
 
@@ -54,8 +54,8 @@ export default class BottomTabNavigator extends Component {
             }
           }}
         >
-          <Tab.Screen name="Ride" component={RideScreen} />
-          <Tab.Screen name="Ride History" component={RideHistoryScreen} />
+          <Tab.Screen name="Alugar" component={RideScreen} />
+          <Tab.Screen name="Histórico de Locações" component={RideHistoryScreen} />
         </Tab.Navigator>
       </NavigationContainer>
     );
